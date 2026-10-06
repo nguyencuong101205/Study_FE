@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+}
+
+#i1 {
+    color: red;
+}
+
+#i2 {
+    color: green;
+}
+.cl1 {
+    color: yellow;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

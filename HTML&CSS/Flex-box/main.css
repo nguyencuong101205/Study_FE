@@ -1,0 +1,130 @@
+.nav {
+  min-width: 100%;
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  padding-left: 0;
+  margin: 5px 18px;
+}
+
+.nav-item {
+  color: black;
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.form__row {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.form__label {
+  min-width: 100px;
+  /* text-align: right; */
+  margin-right: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form__input {
+  flex: 1;
+  display: block;
+  padding: 4px 8px;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.form__btn {
+  width: 10em;
+  height: 5ex;
+  border: 2px solid black;
+  background-color: gold;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: black;
+  color: gold;
+}
+
+.column-layout {
+  margin-top: 36px;
+  padding: 12px 0;
+  background-color: #fff;
+  display: flex;
+}
+
+.column-item {
+  flex: 1;
+  padding: 0 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.sidebar-one {
+  flex: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+}
+
+.main-column {
+  flex: 3;
+}
+
+.feature-layout {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature-item {
+  padding: 12px 16px;
+  margin-top: 16px;
+  flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+  background-color: #50d2b1;
+}
+
+.feature-item:nth-child(2) {
+  background-color: #dd9d37;
+}
+
+.feature-item:nth-child(3) {
+  background-color: #e447a8;
+}
+
+.wrap-layout {
+  background-color: #fff;
+  margin-top: 36px;
+  padding: 12px 0 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */ /* đảo cross start xuông dưới cross end lên trên
+  flex-item khi dôn sẽ đẩy theo hướng lên trên do đã đảo người chiều của cross start và cross end */
+  justify-content: space-around;
+}
+
+.wrap-layout__item {
+  width: 148px;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 20px;
+  background-color: #50d2b1;
+}

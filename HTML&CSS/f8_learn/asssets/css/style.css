@@ -1,0 +1,130 @@
+/* 
+    ::before
+    ::after
+    ::fist-letter
+    ::fist-line
+    ::selector
+*/
+
+/* 
+    :root
+    :hover
+    :active
+    :first-child
+    :last-child
+*/
+
+/* 
+   --Position
+        -relative
+        -absolute
+        -fixed
+        -sticky
+*/
+
+/*
+Background
+    -background-color
+    -background-image
+    -background-repeat
+    -background-size
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-image: url(https://imgs.search.brave.com/2n4uuSCFpsk3WQMUP33fL3r0KTfn5RcyVv2cUt59oWc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4y/LmZwdHNob3AuY29t/LnZuL3NtYWxsL2hp/bmhfbmVuX2NodW5n/X3RvaV9kb25fZ2lh/bl9sYV9nYXVfMjBf/NjU1NWM0YWRlZC5q/cGc);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  background-position: center;
+}
+.h1 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: gray;
+}
+/* .h2 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: gray;
+} */
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+}
+.id1 {
+  width: 10px;
+  height: 15px;
+  color: rgb(46, 3, 109);
+}
+.id2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  color: rgb(46, 3, 109);
+}
+.id3 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: rgb(5, 157, 40);
+}
+.id4 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  color: rgb(255, 0, 0);
+}
+.id5 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  color: rgb(41, 98, 132);
+}
+#class1 {
+  width: 20px;
+  height: 20px;
+  color: rgb(112, 153, 17);
+}
+#class2 {
+  width: 20px;
+  height: 20px;
+  color: rgb(120, 5, 30);
+}
+#class3 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: rgb(209, 14, 220);
+}
+#class4 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: rgb(128, 128, 128);
+}
+
+/*
+CSS flexbox
+    -display: flex | inline-flex
+    -flex-direction: row |column
+    -flex-wrap: nowrap | wrap | wrap-reverse
+    -flex-basis: <length>
+    -justify-content: fkex-star | flex-end | center | space-between | space-around
+    -justify-self: flex-start | flex-end | center 
+    -align-content: flex-start | flex-end | center 
+    -align-self: flex-start | flex-end | center 
+    -flex-grow: <number>
+    -flex-shrink: <number>
+    -flex: <number>
+    -order: <number>
+*/
