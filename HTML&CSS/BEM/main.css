@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 12px 48px;
+  border-radius: 55px;
+  color: white;
+  cursor: pointer;
+  min-width: 90px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* css cho btn thằng đứng cạnh thằng đăng sau  */
+.btn + .btn {
+  margin-left: 12px;
+}
+
+.btn--success {
+  background-color: rgb(5, 157, 40);
+}
+
+.btn--warning {
+  background-color: rgb(248, 159, 7);
+}
+
+.btn--danger {
+  background-color: rgb(233, 16, 16);
+}
+
+/* .btn--disabled {
+  opacity: 0.5 !important;
+  cursor: default !important;
+} */
