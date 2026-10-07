@@ -49,3 +49,55 @@
 - Làm button
 - Làm message
 - Làm 1 thành phần trên website
+
+     <!-- Info Toast Message -->
+
+        <div class="toast toast--info">
+          <div class="toast__icon">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+        <div class="toast__body">
+          <h3 class="toast__title">Info</h3>
+          <p class="toast__message">BEAR___?</p>
+
+        </div>
+        <div class="toast__close">
+          <span class="toast__close-icon"></span>
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+      </div>
+
+  </div>
+      <!-- Warning Toast Message -->
+        <div class="toast toast--warning">
+          <div class="toast__icon">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+        <div class="toast__body">
+          <h3 class="toast__title">Warning</h3>
+          <p class="toast__message">BEAR___?</p>
+
+        </div>
+        <div class="toast__close">
+          <span class="toast__close-icon"></span>
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+  </div>
+      <!-- Error Toast Message -->
+        <div class="toast toast--error">
+          <div class="toast__icon">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+       
+        <div class="toast__body">
+          <h3 class="toast__title">Error</h3>
+          <p class="toast__message">BEAR___?</p>
+        </div>
+        <div class="toast__close">
+          <span class="toast__close-icon"></span>
+           <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+      </div>
+   </div>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="toast">
+      <!-- Success Toast Message -->
+      <div class="toast toast--success">
+        <div class="toast__icon">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="toast__body">
+          <h3 class="toast__title">Success</h3>
+          <p class="toast__message">BEAR___?</p>
+        </div>
+        <div class="toast__close">
+          <span class="toast__close-icon"></span>
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="btn btn--success">Show Success Toast</div>
+      <div class="btn btn--danger">Show Error Toast</div>
+    </div>
+  </body>
+</html>
