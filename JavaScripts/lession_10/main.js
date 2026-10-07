@@ -5,20 +5,24 @@
 // 2 Truyền qua đối số
 // 3 được gọi lại
 
-// function myFunction(param) {
-//   if (typeof param === "function") {
-//     param(); // gọi lại hàm callback
-//   }
-//   console.log("Toi La Bear");
-// }
+function myFunction(param) {
+  if (typeof param === "function") {
+    param("123");
+  }
+  console.log("Toi La Bear");
+}
 
-// myFunction("Hello, World!");
+// myFunction(myCallback);
 
-// function myCallback(callback) {
-//   console.log("Value", callback);
-// }
+function myCallback(callback) {
+  console.log("Value: ", callback);
+}
 
-// myFunction(myCallback); // truyền myCallback vào myFunction như một đối số
+myFunction(myCallback);
+// myCallback("hehehe");
+// Value123  Valuehehehe
+
+// truyền myCallback vào myFunction như một đối số
 
 // Array.prototype.map2 = function (callback) {
 //   var output = [];
@@ -39,23 +43,23 @@
 //   }),
 // );
 
-Array.prototype.foeEach2 = function (callback) {
-  var output = [];
-  var arrayLength = this.length;
+// Array.prototype.foeEach7 = function (callback) {
+//   var output = [];
+//   var arrayLength = this.length;
 
-  for (var i = 0; i < this.length; i++) {
-    if (i in this) {
-      output.push(callback(this[i], i, this));
-    }
-  }
-  return output;
-};
+//   for (var i = 0; i < this.length; i++) {
+//     if (i in this) {
+//       output.push(callback(this[i], i, this));
+//     }
+//   }
+//   return output;
+// };
 
-console.log(
-  [1, 2, 3, 4, 5].foeEach2(function (number) {
-    return number * 2;
-  }),
-);
+// const test = (number) => {
+//   return number * 2;
+// };
+
+// console.log([1, 2, 3, 4, 5].foeEach7(test));
 
 // var courses = ["JavaScript", "PHP", "Ruby"];
 
