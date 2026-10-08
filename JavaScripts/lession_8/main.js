@@ -60,16 +60,16 @@ var courses = [
   },
 ];
 
-//  callback
-// courses.forEach(function (course) {
-//   console.log(course);
-// });
+// callback;
+courses.forEach(function (course) {
+  console.log(course);
+});
 
-// console.log(
-//   courses.every(function (course) {
-//     return course.coin > 0;
-//   }),
-// );
+console.log(
+  courses.every(function (course) {
+    return course.coin > 0;
+  }),
+);
 
 // dễ hiểu
 // ngắn gọn

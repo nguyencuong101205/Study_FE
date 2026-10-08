@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        position: relative;
+        top: 24px;
+        left: 40px;
+        margin-top: 60px;
+      }
+      .header {
+        height: 50px;
+        background-color: rgb(27, 4, 4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .box-child {
+        background-color: blue;
+        position: absolute;
+        /* right: 0px;
+        bottom: 0px;
+        top: 0px;
+        left: 0px; */
+      }
+      ul {
+        height: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="box-child"></div>
+    </div>
+
+    <h1>Position</h1>
+    <ul>
+      <li>Relative</li>
+      <!-- //Tưởng đối -->
+      <li>Absolute</li>
+      <!-- //Tuyệt đối -->
+      <li>Fixed</li>
+      <!-- //Cố định -->
+      <li>Static</li>
+      <!-- //Mặc định -->
+      <li>Sticky</li>
+      <!-- //Dính -->
+    </ul>
+  </body>
+</html>
