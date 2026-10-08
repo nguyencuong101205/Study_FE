@@ -2,7 +2,6 @@
 
 1. Static Properties (Thuộc tính tĩnh - các hằng số toán học)
 
-- Math.PI: trả về số Pi (xấp xỉ 3.14159)
 - Math.E: trả về hằng số Euler / cơ số logarit tự nhiên (xấp xỉ 2.718)
 - Math.LN2: trả về logarit tự nhiên của 2 (ln(2), xấp xỉ 0.693)
 - Math.LN10: trả về logarit tự nhiên của 10 (ln(10), xấp xỉ 2.302)
@@ -27,8 +26,9 @@
 - Math.sqrt(): tính căn bậc hai
 - Math.cbrt(): tính căn bậc ba
 - Math.sign(): trả về dấu của số (-1: số âm, 0: số không, 1: số dương)
+- Math.PI: trả về số Pi (xấp xỉ 3.14159)
 
-# Nhóm Lượng giác tính bằng Radian)
+# Nhóm Lượng giác tính bằng Radian
 
 - Math.sin(): tính sin của một góc
 - Math.cos(): tính cos của một góc

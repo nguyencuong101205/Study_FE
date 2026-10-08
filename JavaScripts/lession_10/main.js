@@ -19,7 +19,6 @@ function myCallback(callback) {
 }
 
 myFunction(myCallback);
-// myCallback("hehehe");
 // Value123  Valuehehehe
 
 // truyền myCallback vào myFunction như một đối số
