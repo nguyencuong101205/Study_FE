@@ -85,6 +85,18 @@ Array.prototype.myMap = function (cb) {
   }
   return output;
 };
+
+Array.prototype.myFilter = function (cb) {
+  var output = [];
+  var arrayLength = this.length;
+  for (var i = 0; i < arrayLength; i++) {
+    if (cb(this[i], i, this)) {
+      output.push(this[i]);
+    }
+  }
+  return output;
+};
+
 // Expected results
 // const numbers = [1, 2, 3];
 
