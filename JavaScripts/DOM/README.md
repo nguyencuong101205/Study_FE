@@ -8,6 +8,7 @@
 
 * Document node
 * Element nodes
+* Attribute nodes
 * Text nodes
 * Node thuộc tính
 * Comment nodes
