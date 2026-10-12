@@ -156,4 +156,61 @@ boxElement.classList.remove("box");
 boxElement.classList.toggle("active");
 boxElement.classList.contains("red");
 
+setTimeout(() => {
+  boxElement.classList.remove("red");
+}, 2000);
 console.log(boxElement.classList);
+
+var divElement = document.querySelectorAll("div");
+divElement.forEach(function (div) {
+  div.classList.add("box");
+});
+
+// DOM event
+// event: là 1 hành động xảy ra trên element
+// event handler: là 1 hàm sẽ được gọi khi event xảy ra
+// event listener: là 1 hàm sẽ được gọi khi event xảy ra, có thể thêm nhiều event listener cho 1 element
+
+// 1. Sử dụng DOM event để khi click vào button "Mua ngay"
+// sẽ hiển thị thông báo "Bạn đã mua khóa học HTML & CSS Pro" trên console.log
+var ctaButtons = document.querySelectorAll(".cta-btn");
+ctaButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    alert("Bạn đã mua khóa học HTML & CSS Pro");
+    console.log("Bạn đã mua khóa học HTML & CSS Pro");
+  });
+});
+
+// Cho trước thẻ button,
+// Hãy viết code JS sao cho khi click vào button sẽ đổi màu chữ button sang màu #fff.
+var clickButton = document.querySelector("button");
+clickButton.addEventListener("click", function () {
+  clickButton.style.color = "#fff";
+});
+
+// input / select
+// keyup / down
+
+var inputElement = document.querySelector("input[type='text']");
+inputElement.onchange = function (e) {
+  console.log(e.target.value);
+};
+
+var selectElement = document.querySelector("select");
+selectElement.onchange = function (e) {
+  console.log(e.target.value);
+};
+
+var inputElement2 = document.querySelector("input[type='checkbox']");
+inputElement2.onchange = function (e) {
+  console.log(e.target.checked);
+};
+
+var inputElement3 = document.querySelector("input[type='text']");
+inputElement3.onkeyup = function (e) {
+  console.log(e.target.value);
+};
+
+// DOM events
+// preventDefault: ngăn chặn hành vi mặc định của element
+// stopPropagation: ngăn chặn sự kiện lan truyền từ element này sang element khác

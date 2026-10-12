@@ -185,3 +185,184 @@
 | `setAttribute(name, value)`        | Thiết lập hoặc cập nhật giá trị cho một thuộc tính.                                                        |
 | `setAttributeNode(attrNode)`       | Thêm hoặc thay thế một node thuộc tính cho phần tử.                                                        |
 | `toggleAttribute(name, force)`     | Bật/tắt một thuộc tính boolean (thêm vào nếu chưa có, xóa bỏ nếu đã có).                                   |
+
+---
+
+## 3. HTML DOM Events (Sự kiện trong DOM)
+
+Sự kiện HTML DOM (DOM Events) cho phép JavaScript đăng ký các hàm xử lý sự kiện (event handlers / listeners) trên các phần tử HTML khi có tương tác từ người dùng hoặc trình duyệt.
+
+### 🖱️ Mouse Events (Sự kiện Chuột)
+
+| Sự kiện (Event) | Thuộc tính HTML | Mô tả (Description)                                                                                  |
+| :-------------- | :-------------- | :--------------------------------------------------------------------------------------------------- |
+| `click`         | `onclick`       | Xảy ra khi người dùng click chuột (nhấn và thả) vào một phần tử.                                     |
+| `contextmenu`   | `oncontextmenu` | Xảy ra khi người dùng click chuột phải vào phần tử để mở menu ngữ cảnh.                              |
+| `dblclick`      | `ondblclick`    | Xảy ra khi người dùng nhấp đúp (double-click) vào một phần tử.                                       |
+| `mousedown`     | `onmousedown`   | Xảy ra ngay tại thời điểm người dùng nhấn nút chuột xuống trên một phần tử.                          |
+| `mouseenter`    | `onmouseenter`  | Xảy ra khi con trỏ chuột di chuyển đi vào vùng của phần tử (không nổi bọt / không tính phần tử con). |
+| `mouseleave`    | `onmouseleave`  | Xảy ra khi con trỏ chuột di chuyển rời khỏi vùng của phần tử (không nổi bọt).                        |
+| `mousemove`     | `onmousemove`   | Xảy ra liên tục khi con trỏ chuột đang di chuyển bên trên một phần tử.                               |
+| `mouseover`     | `onmouseover`   | Xảy ra khi con trỏ chuột di chuyển lên trên một phần tử hoặc các phần tử con của nó (có nổi bọt).    |
+| `mouseout`      | `onmouseout`    | Xảy ra khi con trỏ chuột di chuyển rời khỏi một phần tử hoặc các phần tử con của nó (có nổi bọt).    |
+| `mouseup`       | `onmouseup`     | Xảy ra khi người dùng thả nút chuột ra trên một phần tử.                                             |
+| `wheel`         | `onwheel`       | Xảy ra khi người dùng lăn con lăn chuột (mouse wheel) lên hoặc xuống trên phần tử.                   |
+
+---
+
+### ⌨️ Keyboard Events (Sự kiện Bàn phím)
+
+| Sự kiện (Event) | Thuộc tính HTML | Mô tả (Description)                                                                              |
+| :-------------- | :-------------- | :----------------------------------------------------------------------------------------------- |
+| `keydown`       | `onkeydown`     | Xảy ra khi người dùng đang nhấn một phím bất kỳ xuống (lặp lại liên tục nếu giữ phím).           |
+| `keypress`      | `onkeypress`    | Xảy ra khi người dùng nhấn một phím tạo ra ký tự _(đã lỗi thời/deprecated, nên dùng `keydown`)_. |
+| `keyup`         | `onkeyup`       | Xảy ra khi người dùng nhả một phím trên bàn phím ra.                                             |
+
+---
+
+### 📝 Form & Input Events (Sự kiện Biểu mẫu & Nhập liệu)
+
+| Sự kiện (Event) | Thuộc tính HTML | Mô tả (Description)                                                                                 |
+| :-------------- | :-------------- | :-------------------------------------------------------------------------------------------------- |
+| `blur`          | `onblur`        | Xảy ra khi một phần tử bị mất tiêu điểm (lose focus) — không nổi bọt (bubble).                      |
+| `change`        | `onchange`      | Xảy ra khi giá trị của phần tử form (`<input>`, `<select>`, `<textarea>`) thay đổi và đã mất focus. |
+| `focus`         | `onfocus`       | Xảy ra khi một phần tử nhận được tiêu điểm (focus) — không nổi bọt (bubble).                        |
+| `focusin`       | `onfocusin`     | Xảy ra khi một phần tử chuẩn bị nhận focus (tương tự `focus` nhưng **có** nổi bọt).                 |
+| `focusout`      | `onfocusout`    | Xảy ra khi một phần tử chuẩn bị mất focus (tương tự `blur` nhưng **có** nổi bọt).                   |
+| `input`         | `oninput`       | Xảy ra ngay lập tức mỗi khi giá trị của thẻ `<input>` hoặc `<textarea>` bị thay đổi bởi người dùng. |
+| `invalid`       | `oninvalid`     | Xảy ra khi một phần tử `<input>` không thỏa mãn điều kiện kiểm tra hợp lệ (validation) khi submit.  |
+| `reset`         | `onreset`       | Xảy ra khi biểu mẫu (`<form>`) được đặt lại (reset) về giá trị mặc định.                            |
+| `search`        | `onsearch`      | Xảy ra khi người dùng nhấn Enter hoặc nút xóa (`x`) trong ô `<input type="search">`.                |
+| `select`        | `onselect`      | Xảy ra sau khi người dùng bôi đen (chọn) một đoạn văn bản trong `<input>` hoặc `<textarea>`.        |
+| `submit`        | `onsubmit`      | Xảy ra khi một biểu mẫu (`<form>`) được gửi đi (submit).                                            |
+
+---
+
+### 🖼️ Frame / Window / Object Events (Sự kiện Cửa sổ & Tài liệu)
+
+| Sự kiện (Event)    | Thuộc tính HTML      | Mô tả (Description)                                                                                |
+| :----------------- | :------------------- | :------------------------------------------------------------------------------------------------- |
+| `abort`            | `onabort`            | Xảy ra khi quá trình tải một tài nguyên/media bị hủy bỏ giữa chừng.                                |
+| `afterprint`       | `onafterprint`       | Xảy ra sau khi tài liệu đã bắt đầu in hoặc hộp thoại in (print preview) đã đóng lại.               |
+| `beforeprint`      | `onbeforeprint`      | Xảy ra ngay trước khi tài liệu chuẩn bị được in (trước khi mở hộp thoại in).                       |
+| `beforeunload`     | `onbeforeunload`     | Xảy ra trước khi tài liệu sắp bị đóng/tải lại (dùng để cảnh báo người dùng lưu dữ liệu).           |
+| `DOMContentLoaded` | _(Dùng Listener)_    | Xảy ra khi HTML đã được tải và phân tích cú pháp xong hoàn toàn (không cần đợi ảnh, CSS tải xong). |
+| `error`            | `onerror`            | Xảy ra khi có lỗi trong quá trình tải một file ngoài (ảnh, script,...) hoặc lỗi thực thi.          |
+| `fullscreenchange` | `onfullscreenchange` | Xảy ra khi một phần tử chuyển sang hoặc thoát khỏi chế độ toàn màn hình (fullscreen).              |
+| `fullscreenerror`  | `onfullscreenerror`  | Xảy ra khi trình duyệt không thể chuyển sang chế độ toàn màn hình.                                 |
+| `hashchange`       | `onhashchange`       | Xảy ra khi phần neo (`#hash`) trên URL của trang hiện tại bị thay đổi.                             |
+| `load`             | `onload`             | Xảy ra khi một đối tượng (toàn bộ trang web, hình ảnh, iframe, script) đã tải xong hoàn toàn.      |
+| `offline`          | `onoffline`          | Xảy ra khi trình duyệt bị mất kết nối mạng (chuyển sang chế độ ngoại tuyến).                       |
+| `online`           | `ononline`           | Xảy ra khi trình duyệt có lại kết nối mạng (chuyển sang chế độ trực tuyến).                        |
+| `pagehide`         | `onpagehide`         | Xảy ra khi người dùng rời khỏi trang web (chuyển sang trang khác).                                 |
+| `pageshow`         | `onpageshow`         | Xảy ra khi người dùng điều hướng đến trang web (kể cả khi quay lại từ bộ nhớ đệm cache).           |
+| `popstate`         | `onpopstate`         | Xảy ra khi lịch sử duyệt web (window history) thay đổi trạng thái hoạt động.                       |
+| `resize`           | `onresize`           | Xảy ra khi kích thước cửa sổ trình duyệt (document view) bị thay đổi.                              |
+| `scroll`           | `onscroll`           | Xảy ra khi thanh cuộn (scrollbar) của phần tử hoặc trang web đang được cuộn.                       |
+| `storage`          | `onstorage`          | Xảy ra khi vùng lưu trữ Web Storage (`localStorage` / `sessionStorage`) được cập nhật.             |
+| `unload`           | `onunload`           | Xảy ra khi trang web đã bị dỡ bỏ (đóng tab hoặc chuyển trang).                                     |
+
+---
+
+### 📋 Clipboard, Drag & Drop, Touch Events (Sự kiện Bộ nhớ tạm, Kéo thả & Cảm ứng)
+
+| Sự kiện (Event) | Nhóm sự kiện     | Mô tả (Description)                                                                               |
+| :-------------- | :--------------- | :------------------------------------------------------------------------------------------------ |
+| `copy`          | `ClipboardEvent` | Xảy ra khi người dùng sao chép (`Ctrl + C`) nội dung của một phần tử.                             |
+| `cut`           | `ClipboardEvent` | Xảy ra khi người dùng cắt (`Ctrl + X`) nội dung của một phần tử.                                  |
+| `paste`         | `ClipboardEvent` | Xảy ra khi người dùng dán (`Ctrl + V`) nội dung vào một phần tử.                                  |
+| `drag`          | `DragEvent`      | Xảy ra liên tục trong khi một phần tử hoặc vùng văn bản đang được kéo.                            |
+| `dragend`       | `DragEvent`      | Xảy ra khi thao tác kéo kết thúc (nhả nút chuột hoặc nhấn phím Esc).                              |
+| `dragenter`     | `DragEvent`      | Xảy ra khi phần tử đang kéo đi vào một vùng đích hợp lệ (drop target).                            |
+| `dragleave`     | `DragEvent`      | Xảy ra khi phần tử đang kéo rời khỏi một vùng đích hợp lệ.                                        |
+| `dragover`      | `DragEvent`      | Xảy ra liên tục khi phần tử đang kéo nằm bên trên vùng đích (cần `preventDefault()` để cho phép). |
+| `dragstart`     | `DragEvent`      | Xảy ra khi người dùng bắt đầu kéo một phần tử.                                                    |
+| `drop`          | `DragEvent`      | Xảy ra khi phần tử đang kéo được thả vào vùng đích hợp lệ.                                        |
+| `touchstart`    | `TouchEvent`     | Xảy ra khi ngón tay chạm vào màn hình cảm ứng.                                                    |
+| `touchmove`     | `TouchEvent`     | Xảy ra khi ngón tay di chuyển trên màn hình cảm ứng.                                              |
+| `touchend`      | `TouchEvent`     | Xảy ra khi ngón tay nhấc khỏi màn hình cảm ứng.                                                   |
+| `touchcancel`   | `TouchEvent`     | Xảy ra khi thao tác chạm bị gián đoạn.                                                            |
+
+---
+
+### 🎬 Animation, Transition & Media Events (Sự kiện Hoạt ảnh & Đa phương tiện)
+
+| Sự kiện (Event)      | Nhóm sự kiện      | Mô tả (Description)                                                                           |
+| :------------------- | :---------------- | :-------------------------------------------------------------------------------------------- |
+| `animationstart`     | `AnimationEvent`  | Xảy ra khi một hoạt ảnh CSS (`@keyframes`) bắt đầu chạy.                                      |
+| `animationiteration` | `AnimationEvent`  | Xảy ra khi một hoạt ảnh CSS lặp lại một chu kỳ mới.                                           |
+| `animationend`       | `AnimationEvent`  | Xảy ra khi một hoạt ảnh CSS đã hoàn thành.                                                    |
+| `transitionend`      | `TransitionEvent` | Xảy ra khi một hiệu ứng chuyển đổi CSS (`transition`) đã hoàn tất.                            |
+| `canplay`            | `Event` (Media)   | Xảy ra khi trình duyệt có thể bắt đầu phát media (video/audio) vì đã tải đủ dữ liệu tạm thời. |
+| `ended`              | `Event` (Media)   | Xảy ra khi media đã phát đến cuối (hết bài hát hoặc hết video).                               |
+| `pause`              | `Event` (Media)   | Xảy ra khi media bị tạm dừng (bởi người dùng hoặc bằng code).                                 |
+| `play`               | `Event` (Media)   | Xảy ra khi media đã bắt đầu phát hoặc không còn ở trạng thái tạm dừng.                        |
+| `playing`            | `Event` (Media)   | Xảy ra khi media đang phát sau khi đã bị tạm dừng hoặc dừng để nạp dữ liệu (buffering).       |
+| `timeupdate`         | `Event` (Media)   | Xảy ra khi vị trí phát hiện tại của media thay đổi (khi video/audio đang chạy).               |
+| `volumechange`       | `Event` (Media)   | Xảy ra khi âm lượng media thay đổi (bao gồm cả khi bật/tắt tiếng mute).                       |
+
+---
+
+### 🧩 DOM Event Objects (Các Đối tượng Sự kiện)
+
+Khi một sự kiện xảy ra, trình duyệt tự động tạo một đối tượng sự kiện (`event` / `e`) và truyền vào hàm xử lý. Mọi đối tượng sự kiện đều kế thừa từ đối tượng gốc `Event`.
+
+| Đối tượng (Event Object) | Mô tả (Description)                                                                                   |
+| :----------------------- | :---------------------------------------------------------------------------------------------------- |
+| `Event`                  | Đối tượng cơ sở (gốc) cho tất cả các đối tượng sự kiện trong HTML DOM.                                |
+| `AnimationEvent`         | Đại diện cho các sự kiện liên quan đến hoạt ảnh CSS (`animationstart`, `animationend`,...).           |
+| `ClipboardEvent`         | Đại diện cho các sự kiện liên quan đến bộ nhớ tạm (`copy`, `cut`, `paste`).                           |
+| `DragEvent`              | Đại diện cho các sự kiện kéo và thả phần tử (`drag`, `drop`, `dragover`,...).                         |
+| `FocusEvent`             | Đại diện cho các sự kiện liên quan đến trạng thái tiêu điểm (`focus`, `blur`, `focusin`, `focusout`). |
+| `HashChangeEvent`        | Đại diện cho sự kiện khi phần `#hash` của URL thay đổi (`hashchange`).                                |
+| `InputEvent`             | Đại diện cho các sự kiện nhập liệu từ người dùng (`input`, `beforeinput`).                            |
+| `KeyboardEvent`          | Đại diện cho các sự kiện tương tác với bàn phím (`keydown`, `keypress`, `keyup`).                     |
+| `MouseEvent`             | Đại diện cho các sự kiện tương tác với chuột (`click`, `dblclick`, `mousedown`, `mousemove`,...).     |
+| `PageTransitionEvent`    | Đại diện cho các sự kiện khi chuyển trang (`pagehide`, `pageshow`).                                   |
+| `PopStateEvent`          | Đại diện cho sự kiện khi lịch sử trình duyệt thay đổi (`popstate`).                                   |
+| `ProgressEvent`          | Đại diện cho tiến trình tải tài nguyên bên ngoài (như `loadstart`, `progress`, `loadend`).            |
+| `StorageEvent`           | Đại diện cho sự kiện khi `localStorage` hoặc `sessionStorage` thay đổi (`storage`).                   |
+| `TouchEvent`             | Đại diện cho các sự kiện thao tác trên màn hình cảm ứng (`touchstart`, `touchmove`, `touchend`).      |
+| `TransitionEvent`        | Đại diện cho các sự kiện liên quan đến CSS Transition (`transitionend`).                              |
+| `UIEvent`                | Đối tượng cơ sở cho các sự kiện giao diện người dùng (cha của `MouseEvent`, `KeyboardEvent`,...).     |
+| `WheelEvent`             | Đại diện cho sự kiện lăn con lăn chuột (`wheel`).                                                     |
+
+---
+
+### 📌 Event Object Properties & Methods (Thuộc tính & Phương thức của `event`)
+
+#### 1. Thuộc tính & Phương thức chuẩn của `Event` (Dùng chung cho mọi sự kiện)
+
+| Thuộc tính / Phương thức           | Mô tả (Description)                                                                                                |
+| :--------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| `event.bubbles`                    | Trả về `true` nếu sự kiện có nổi bọt (bubbling) ngược lên các phần tử cha trong DOM, ngược lại là `false`.         |
+| `event.cancelable`                 | Trả về `true` nếu hành vi mặc định của sự kiện có thể bị hủy bỏ bằng `preventDefault()`.                           |
+| `event.composed`                   | Trả về `true` nếu sự kiện có thể đi xuyên qua ranh giới Shadow DOM lên DOM chính.                                  |
+| `event.currentTarget`              | Trả về phần tử hiện đang gắn hàm xử lý sự kiện (`addEventListener`) đang được thực thi.                            |
+| `event.defaultPrevented`           | Trả về `true` nếu phương thức `event.preventDefault()` đã được gọi trên sự kiện này.                               |
+| `event.eventPhase`                 | Trả về giai đoạn hiện tại của luồng sự kiện (`1`: Capturing, `2`: At Target, `3`: Bubbling).                       |
+| `event.isTrusted`                  | Trả về `true` nếu sự kiện được tạo bởi thao tác thực của người dùng, `false` nếu tạo bằng code JS (`click()`,...). |
+| `event.target`                     | Trả về phần tử HTML gốc nơi thực sự phát sinh ra sự kiện (phần tử trực tiếp bị click, gõ phím,...).                |
+| `event.timeStamp`                  | Trả về thời điểm (tính bằng mili-giây) kể từ khi trang được tải cho đến khi sự kiện xảy ra.                        |
+| `event.type`                       | Trả về tên loại sự kiện dưới dạng chuỗi (ví dụ: `"click"`, `"keydown"`, `"submit"`).                               |
+| `event.preventDefault()`           | **Phương thức:** Ngăn chặn hành vi mặc định của trình duyệt (ví dụ: chặn thẻ `<a>` chuyển trang, chặn `<form>`).   |
+| `event.stopPropagation()`          | **Phương thức:** Ngăn không cho sự kiện tiếp tục lan truyền (nổi bọt hoặc bắt giữ) sang các phần tử cha/con khác.  |
+| `event.stopImmediatePropagation()` | **Phương thức:** Ngăn sự kiện lan truyền VÀ ngăn luôn các hàm listener khác đang gắn trên cùng phần tử đó chạy.    |
+
+#### 2. Thuộc tính thông dụng của `MouseEvent` & `KeyboardEvent`
+
+| Thuộc tính (Property)       | Đối tượng       | Mô tả (Description)                                                                                      |
+| :-------------------------- | :-------------- | :------------------------------------------------------------------------------------------------------- |
+| `event.clientX` / `clientY` | `MouseEvent`    | Tọa độ ngang (X) và dọc (Y) của con trỏ chuột tính theo vùng nhìn thấy hiện tại (viewport).              |
+| `event.pageX` / `pageY`     | `MouseEvent`    | Tọa độ ngang (X) và dọc (Y) của con trỏ chuột tính theo toàn bộ tài liệu (bao gồm cả phần đã cuộn).      |
+| `event.screenX` / `screenY` | `MouseEvent`    | Tọa độ ngang (X) và dọc (Y) của con trỏ chuột tính theo màn hình thiết bị của người dùng.                |
+| `event.offsetX` / `offsetY` | `MouseEvent`    | Tọa độ ngang (X) và dọc (Y) của con trỏ chuột tính từ góc trên bên trái của chính phần tử `target`.      |
+| `event.button`              | `MouseEvent`    | Trả về số biểu thị nút chuột vừa được nhấn (`0`: chuột trái, `1`: con lăn giữa, `2`: chuột phải).        |
+| `event.relatedTarget`       | `MouseEvent`    | Trả về phần tử liên quan khi di chuột (phần tử vừa rời đi với `mouseover`, hoặc vừa tới với `mouseout`). |
+| `event.key`                 | `KeyboardEvent` | Trả về giá trị ký tự hoặc tên phím được nhấn (ví dụ: `"a"`, `"A"`, `"Enter"`, `"Escape"`, `"ArrowUp"`).  |
+| `event.code`                | `KeyboardEvent` | Trả về mã vị trí phím vật lý trên bàn phím (ví dụ: `"KeyA"`, `"Digit1"`, `"Space"`, `"ShiftLeft"`).      |
+| `event.altKey`              | Cả hai          | Trả về `true` nếu phím `Alt` (hoặc `Option` trên Mac) đang được giữ khi sự kiện xảy ra.                  |
+| `event.ctrlKey`             | Cả hai          | Trả về `true` nếu phím `Ctrl` đang được giữ khi sự kiện xảy ra.                                          |
+| `event.shiftKey`            | Cả hai          | Trả về `true` nếu phím `Shift` đang được giữ khi sự kiện xảy ra.                                         |
+| `event.metaKey`             | Cả hai          | Trả về `true` nếu phím `Meta` (phím `Windows` hoặc `Command ⌘` trên Mac) đang được giữ.                  |
+| `event.repeat`              | `KeyboardEvent` | Trả về `true` nếu một phím đang được nhấn giữ liên tục khiến sự kiện `keydown` lặp lại.                  |
