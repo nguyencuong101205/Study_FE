@@ -312,7 +312,9 @@ html {
   background: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   margin: 0 5px;
-  transition: background 0.3s, transform 0.2s;
+  transition:
+    background 0.3s,
+    transform 0.2s;
 }
 
 .indicator.active {

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 195 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black Bear Mascot -->
+  <g id="black-bear-icon" transform="translate(4, 2)">
+    <!-- Ears -->
+    <circle cx="11" cy="11" r="8" fill="#1e1e24" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="11" cy="11" r="4.5" fill="#e09f67"/>
+    <circle cx="33" cy="11" r="8" fill="#1e1e24" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="33" cy="11" r="4.5" fill="#e09f67"/>
+    <!-- Head -->
+    <ellipse cx="22" cy="23" rx="18" ry="15.5" fill="#1e1e24" stroke="#ffffff" stroke-width="1.2"/>
+    <!-- Cute Cheeks -->
+    <circle cx="9.5" cy="25.5" r="3" fill="#ff7675" opacity="0.85"/>
+    <circle cx="34.5" cy="25.5" r="3" fill="#ff7675" opacity="0.85"/>
+    <!-- Eyes -->
+    <circle cx="15.5" cy="19.5" r="2.8" fill="#ffffff"/>
+    <circle cx="16" cy="19.5" r="1.8" fill="#111111"/>
+    <circle cx="15.2" cy="18.8" r="0.8" fill="#ffffff"/>
+
+    <circle cx="28.5" cy="19.5" r="2.8" fill="#ffffff"/>
+    <circle cx="28" cy="19.5" r="1.8" fill="#111111"/>
+    <circle cx="27.5" cy="18.8" r="0.8" fill="#ffffff"/>
+
+    <!-- Snout (Cream/Tan) -->
+    <ellipse cx="22" cy="26" rx="7.8" ry="5.5" fill="#fae1c3"/>
+    <!-- Nose -->
+    <path d="M19.8 24 h4.4 c0 1.8 -2.2 3.2 -2.2 3.2 s-2.2 -1.4 -2.2 -3.2 z" fill="#1e1e24"/>
+    <!-- Mouth -->
+    <path d="M20 27.2 Q22 29.3 24 27.2" stroke="#1e1e24" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Typography: BEAR SHOP -->
+  <text x="54" y="29" font-family="'Poppins', 'Roboto', sans-serif" font-weight="900" font-size="24" fill="#ffffff" letter-spacing="1">BEAR</text>
+  <rect x="126" y="13" width="50" height="19" rx="5" fill="#1e1e24" stroke="#ffffff" stroke-width="0.8"/>
+  <text x="151" y="27" font-family="'Roboto', sans-serif" font-weight="800" font-size="11.5" fill="#ffffff" text-anchor="middle">SHOP</text>
+  <text x="55" y="42" font-family="'Roboto', sans-serif" font-weight="500" font-size="9" fill="rgba(255, 255, 255, 0.95)" letter-spacing="2">OFFICIAL STORE</text>
+</svg>
