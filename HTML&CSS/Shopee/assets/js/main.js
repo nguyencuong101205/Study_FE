@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ==================== MODAL HANDLING ====================
+  // Auth modal
   const authModal = document.getElementById("auth-modal");
   const modalOverlay = document.getElementById("modal-overlay");
   const registerForm = document.getElementById("register-form");
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ==================== SEARCH OPTION DROPDOWN ====================
+  // Seach select dropdown
   const searchSelect = document.querySelector(".header__search-select");
   const searchSelectLabel = document.querySelector(
     ".header__search-select-label",
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ==================== DATA SẢN PHẨM PHÂN TRANG ====================
+  // Product data
   const products = [
     // Trang 1
     {
@@ -480,7 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const TOTAL_PAGES = Math.ceil(products.length / ITEMS_PER_PAGE); // 3 trang
   let currentPage = 1;
 
-  // Render sản phẩm lên giao diện
+  // Render
   function renderProducts(page) {
     const productGrid = document.querySelector(".home-product .grid__row");
     if (!productGrid) return;
@@ -634,8 +634,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-
-  // Chuyển trang
+  // Next Page
   function goToPage(page) {
     if (page < 1 || page > TOTAL_PAGES) return;
     currentPage = page;
@@ -644,14 +643,12 @@ document.addEventListener("DOMContentLoaded", () => {
     renderPagination(currentPage);
     updateMiniPagination(currentPage);
 
-    // Cuộn mượt lên đầu danh sách sản phẩm
     const appContainer = document.querySelector(".app__container");
     if (appContainer) {
       appContainer.scrollIntoView({ behavior: "smooth" });
     }
   }
 
-  // Bắt sự kiện mini pagination trên thanh filter
   const miniPrev = document.querySelector(".home-filter__page-btn:first-child");
   const miniNext = document.querySelector(".home-filter__page-btn:last-child");
 
@@ -706,6 +703,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Khởi động trang đầu tiên
   goToPage(1);
 });

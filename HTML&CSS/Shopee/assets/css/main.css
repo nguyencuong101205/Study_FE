@@ -1,8 +1,7 @@
 .app {
   overflow: hidden;
 }
-
-/* ==================== HEADER ==================== */
+/* Header */
 .header {
   height: var(--header-height);
   background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -868,7 +867,7 @@
   display: block;
 }
 
-/* ==================== APP CONTAINER ==================== */
+/* App container */
 .app__container {
   background-color: #f5f5f5;
   padding-top: 36px;
@@ -1219,7 +1218,7 @@ i.home-product-item__like-icon-fill {
   padding-left: 0;
 }
 
-/* ==================== FOOTER ==================== */
+/* Footer */
 .footer {
   padding-top: 16px;
   border-top: 4px solid var(--primary-color);
