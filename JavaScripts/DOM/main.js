@@ -214,3 +214,28 @@ inputElement3.onkeyup = function (e) {
 // DOM events
 // preventDefault: ngăn chặn hành vi mặc định của element
 // stopPropagation: ngăn chặn sự kiện lan truyền từ element này sang element khác
+
+// Event listener - DOM events
+// JSON
+// Fetch
+// DOM location
+// Local storage
+// Session storage
+// Coding convention
+// Best practices
+// Mistakes
+// Performance
+
+// 1. Xử lí nhiều việc khi 1 event xảy ra
+// 2. Lắng nghe / Hủy bỏ lắng nghe event
+
+var btn = document.querySelector("button");
+
+setTimeout(function () {
+  btn.onclick = function () {
+    console.log("Viec 1");
+    console.log("Viec 2");
+    alert("Viec 3");
+  };
+}, 3000);
+console.log(btn);
