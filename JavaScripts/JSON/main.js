@@ -26,7 +26,11 @@ console.log(JSON.stringify({ name: "Bear", age: 18 }));
 // Promise là một đối tượng đại diện cho một giá trị có thể có trong tương lai.
 // Promise có 3 trạng thái: Pending, Fulfilled, Rejected
 // sysnc: đồng bộ
+// khi thực thi một đoạn code, các dòng code sẽ được thực hiện theo thứ tự từ trên xuống dưới,
+// từng dòng một.
 // async: bất đồng bộ
+// khi thực thi một đoạn code, các dòng code sẽ không được thực hiện theo thứ tự từ trên xuống dưới,
+// mà sẽ được thực hiện theo thứ tự mà chúng được gọi, và có thể sẽ được thực hiện song song với nhau.
 
 // ==========================================
 // NỖI ĐAU (PAIN) - CALLBACK HELL & PYRAMID OF DOOM
@@ -100,3 +104,97 @@ getUser(1, function (user) {
   });
 });
 
+// Async
+//  setTimeout, setInterval, fetch, XMLHttpRequest, Promise, async/await, file reading
+// request animation frame, geolocation, web workers, indexedDB, service workers, streams, WebSockets
+
+// promise(pain) -> async/await (solution)
+// Callback Hell -> Promise -> Async/Await
+// Pyramid of Doom -> Promise -> Async/Await
+
+// setTimeout(function () {
+//   console.log("Bắt đầu...");
+//   setTimeout(function () {
+//     console.log("Đang xử lý...");
+//     setTimeout(function () {
+//       console.log("Kết thúc!");
+//       setTimeout(function () {
+//         console.log("Bắt đầu lại...");
+//         setTimeout(function () {
+//           console.log("Đang xử lý lại...");
+//           setTimeout(function () {
+//             console.log("Kết thúc lại!");
+//           }, 1000);
+//         }, 1000);
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+
+// promise(concept) -> async/await (solution)
+// Lý thuyết, cách hoạt động, cách sử dụng, ví dụ về Promise trong JavaScript
+// Promise là một đối tượng đại diện cho một giá trị có thể có trong tương lai.
+// Promise có 3 trạng thái: Pending, Fulfilled, Rejected
+// resolve: khi Promise được thực hiện thành công
+// reject: khi Promise được thực hiện thất bại
+// then: khi Promise được thực hiện thành công, sẽ gọi hàm then
+// catch: khi Promise được thực hiện thất bại, sẽ gọi hàm catch
+// finally: khi Promise được thực hiện xong, sẽ gọi hàm finally
+
+// Ví dụ về Promise
+// 1. new Promise
+// 2. executor function
+
+var promise = new Promise(
+  // Executor- Hàm thực thi ngay lập tức khi Promise được tạo ra
+  function (resolve, reject) {
+    // logic
+    // Thành công: resolve()
+    // Thất bại: reject()
+
+    // Fake call API
+    // resolve(123);
+    reject("Lỗi xảy ra");
+  },
+);
+
+promise
+  .then(function () {
+    console.log(1);
+  })
+  .then(function () {
+    console.log(2);
+  })
+  .then(function () {
+    console.log(3);
+  })
+  .catch(function () {
+    console.log("Thất bại");
+  })
+  .finally(function () {
+    console.log("Done!");
+  });
+
+// Chain
+promise
+  .then(function () {
+    console.log("Thành công");
+  })
+  .catch(function () {
+    console.log("Thất bại:");
+  })
+  .finally(function () {
+    console.log("Kết thúc");
+  });
+
+// Promise sinh ra cho việc xử lý bất đồng bộ, giúp tránh Callback Hell và Pyramid of Doom.
+// Promise giúp viết code bất đồng bộ dễ đọc, dễ hiểu hơn, dễ bảo trì hơn.
+// Async/Await là cú pháp được xây dựng trên Promise, giúp viết code bất đồng bộ dễ đọc, dễ hiểu hơn.
+// Promise khi resolve trả về then
+// Promise khi reject trả về catch
+// Promise khi finally luôn được gọi, bất kể resolve hay reject
+
+// khi trong then có setTimeout hoặc một hàm nào đó trả về 1 new Promise thì sẽ trả về 1 Promise mới các then ở sau sẽ phải chờ
+// và Promise mới này sẽ được resolve hoặc reject dựa trên kết quả của Promise trong then.
+// khi 1 chuỗi then đang chạy có reject() thì các then ở sau sẽ không được thực hiện và sẽ nhảy sang catch() hoặc finally() nếu có
+// Promise methods: resove, reject, all, race, allSettled, any

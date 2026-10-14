@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Bài viết đầu tiên",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "Học json-server",
+      "views": 250
+    },
+    {
+      "id": "6Ssay73pb_A"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "Bài viết hay quá!",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "Bear"
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}

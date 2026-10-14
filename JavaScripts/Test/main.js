@@ -276,10 +276,23 @@
 // ];
 // console.log(arrToObj(arr)); // { name: 'Sơn Đặng', age: 18 }
 
-var cars = ["Rolls-Royce", "Mercedes", "Lexus", "BMW", "Audi"];
+// var cars = ["Rolls-Royce", "Mercedes", "Lexus", "BMW", "Audi"];
 
-function checkCar(cars) {
-  return cars.includes("Mercedes", 2);
+// function checkCar(cars) {
+//   return cars.includes("Mercedes", 2);
+// }
+
+// console.log(checkCar(cars)); // Output: ?
+
+async function getData() {
+  try {
+    console.log("Bắt đầu...");
+    const data = await fetchData(); // Dừng đợi fetchData() giải quyết xong
+    console.log(data);
+    console.log("Kết thúc!");
+  } catch (error) {
+    console.error("Lỗi:", error);
+  }
 }
 
-console.log(checkCar(cars)); // Output: ?
+getData();
