@@ -33,7 +33,9 @@
   color: var(--primary-color);
   cursor: pointer;
   padding: 6px;
-  transition: transform 0.2s ease, opacity 0.2s;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +87,11 @@
   height: 90px;
   pointer-events: none;
   opacity: 0.5;
-  background: radial-gradient(ellipse at center, rgba(236, 31, 85, 0.16) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(236, 31, 85, 0.16) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   z-index: 0;
 }
 
@@ -100,7 +106,9 @@
   width: 190px;
   position: relative;
   z-index: 1;
-  transition: width 0.08s linear, opacity 0.08s linear;
+  transition:
+    width 0.08s linear,
+    opacity 0.08s linear;
 }
 
 .cd-ring {
@@ -188,7 +196,9 @@
   background: var(--primary-gradient);
   box-shadow: 0 8px 24px rgba(236, 31, 85, 0.45);
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .control .btn-toggle-play:hover {
