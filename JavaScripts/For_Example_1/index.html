@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player - Web App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="player">
+    <div class="dashboard">
+      <header class="header">
+        <div class="btn-icon btn-nav-back" title="Thu nhỏ">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="header-center">
+          <div class="now-playing">Now playing:</div>
+          <h2 class="song-title">Sting 57th & 9th</h2>
+        </div>
+        <div class="btn-icon btn-add" title="Thêm vào danh sách">
+          <i class="fas fa-plus"></i>
+        </div>
+      </header>
+
+      <div class="cd-wrapper">
+        <div class="cd-waveform-bg">
+          <svg class="waveform-svg" viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path d="M0,50 Q25,20 50,50 T100,50 T150,15 T200,80 T250,50 T300,20 T350,85 T400,30 T450,70 T500,50" 
+                  fill="none" stroke="rgba(236, 31, 85, 0.25)" stroke-width="2"/>
+            <path d="M0,50 Q30,70 60,50 T120,30 T180,65 T240,40 T300,60 T360,35 T420,65 T480,45 T500,50" 
+                  fill="none" stroke="rgba(236, 31, 85, 0.15)" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <div class="cd">
+          <div class="cd-ring">
+            <div class="cd-thumb"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="btn btn-repeat" title="Lặp lại bài hát">
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="btn btn-prev" title="Bài trước">
+          <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="btn btn-toggle-play" title="Phát / Tạm dừng">
+          <i class="fas fa-pause icon-pause"></i>
+          <i class="fas fa-play icon-play"></i>
+        </div>
+        <div class="btn btn-next" title="Bài tiếp theo">
+          <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="btn btn-random" title="Bật / Tắt phát ngẫu nhiên">
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+        <div class="progress-time">
+          <span class="time-current">0:00</span>
+          <span class="time-duration">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="playlist-section">
+      <div class="up-next-wrapper">
+        <span class="up-next-badge">Up next:</span>
+      </div>
+
+      <div class="playlist"></div>
+    </div>
+
+    <audio id="audio" src=""></audio>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

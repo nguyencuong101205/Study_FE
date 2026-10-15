@@ -1,3 +1,7 @@
+import logger from "./logger.js";
+logger("Hello world");
+logger("This is a warning", TYPE_WARN);
+logger("This is an error", TYPE_ERROR);
 // Arrow function
 
 // const multiply = (x, y) => x * y;
@@ -139,3 +143,22 @@ function logger(...params) {
   console.log(params);
 }
 console.log(logger(1, 2, 3, 4, 5));
+
+// Tagged template literals
+
+function hightlight([first, ...strings], ...values) {
+  const result = values.reduce(
+    (acc, curr) => [...acc, `<span>${curr}</span>`, strings.shift()],
+    [first],
+  );
+  return result.join("");
+}
+
+var brand = "F8";
+var course = "JavaScript";
+
+const htmls = hightlight`Hello ${brand}, welcome to ${course}`;
+
+console.log(htmls);
+
+// Modules (import/export)
