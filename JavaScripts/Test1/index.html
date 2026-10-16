@@ -1,0 +1,1019 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bear Shop</title>
+    <link rel="icon" href="./assets/img/bear-logo.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+    
+
+       
+
+              
+
+              <!-- Search Button -->
+              <button class="header__search-btn" aria-label="Tìm kiếm">
+                <i
+                  class="header__search-btn-icon fa-solid fa-magnifying-glass"
+                ></i>
+              </button>
+            </div>
+
+           
+
+                <!-- Cart Dropdown -->
+                <div class="header__cart-list">
+                  <img
+                    src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9bdd8040b334d31946f49e36beaf32db.png"
+                    alt="Chưa có sản phẩm"
+                    class="header__cart-no-cart-img"
+                  />
+                  <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+                  <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                  <ul class="header__cart-list-item">
+                    <li class="header__cart-item">
+                      <img
+                        src="https://nguyencongpc.vn/media/product/250-27952-gigabyte-geforce-rtx-5060-windforce-max-oc-8g-0-1.jpg"
+                        alt="VGA RTX"
+                        class="header__cart-img"
+                      />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">
+                            Card màn hình Gigabyte GeForce RTX 4060 WINDFORCE OC
+                            8GB
+                          </h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price"
+                              >8.091.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">1</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description"
+                            >Phân loại: Dual Fan OC</span
+                          >
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img
+                        src="https://nguyencongpc.vn/media/product/250-22464-mik--shiba.jpg"
+                        alt="Bàn phím MIK"
+                        class="header__cart-img"
+                      />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">
+                            Bàn phím cơ MIK Shiba TKL RGB Hotswap Gasket Red
+                            Switch
+                          </h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price"
+                              >1.125.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">1</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description"
+                            >Phân loại: Red Switch</span
+                          >
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img
+                        src="https://nguyencongpc.vn/media/product/250-25184-ngu---n-m--y-t--nh-corsair-rm850e-atx-3-0-1.jpeg"
+                        alt="Nguồn Corsair"
+                        class="header__cart-img"
+                      />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">
+                            Nguồn máy tính Corsair RM850e ATX 3.0 Gold Full
+                            Modular
+                          </h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price"
+                              >2.961.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">1</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description"
+                            >Phân loại: 850W Gold</span
+                          >
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="#" class="header__cart-view-cart btn btn--primary"
+                    >Xem giỏ hàng</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- App Container -->
+      <div class="app__container">
+        <div class="grid">
+          <div class="grid__row app__content">
+            <!-- Sidebar: Category -->
+            <div class="grid__column-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  <i class="category__heading-icon fa-solid fa-list"></i>
+                  Danh mục
+                </h3>
+                <ul class="category-list">
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link"
+                      >CARD MÀN HÌNH (VGA)</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >BỘ VI XỬ LÝ (CPU)</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >BO MẠCH CHỦ (MAIN)</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >BỘ NHỚ TRONG (RAM)</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Ổ CỨNG SSD / HDD</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >NGUỒN MÁY TÍNH (PSU)</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >VỎ CASE & TẢN AIO</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >BÀN PHÍM CƠ CUSTOM</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >CHUỘT & LÓT CHUỘT</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">TAI NGHE GAMING</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">MÀN HÌNH GAMING</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link"
+                      >PHỤ KIỆN & GEAR KHÁC</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Main Content: Products & Filters -->
+            <div class="grid__column-10">
+              <!-- Filter Bar -->
+              <div class="home-filter">
+                <span class="home-filter__label">Sắp xếp theo</span>
+                <button class="home-filter__btn btn">Phổ Biến</button>
+                <button class="home-filter__btn btn btn--primary">
+                  Mới Nhất
+                </button>
+                <button class="home-filter__btn btn">Bán Chạy</button>
+
+                <div class="select-input">
+                  <span class="select-input__label">Giá</span>
+                  <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                  <!-- List options -->
+                  <ul class="select-input__list">
+                    <li class="select-input__item">
+                      <a href="#" class="select-input__link"
+                        >Giá: Thấp đến Cao</a
+                      >
+                    </li>
+                    <li class="select-input__item">
+                      <a href="#" class="select-input__link"
+                        >Giá: Cao đến Thấp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Mini pagination -->
+                <div class="home-filter__page">
+                  <span class="home-filter__page-num">
+                    <span class="home-filter__page-current">1</span>/14
+                  </span>
+                  <div class="home-filter__page-control">
+                    <a
+                      href=""
+                      class="home-filter__page-btn home-filter__page-btn--disabled"
+                    >
+                      <i
+                        class="home-filter__page-icon fa-solid fa-chevron-left"
+                      ></i>
+                    </a>
+                    <a href="" class="home-filter__page-btn">
+                      <i
+                        class="home-filter__page-icon fa-solid fa-chevron-right"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Grid -->
+              <div class="home-product">
+                <div class="grid__row">
+                  <!-- Product 1: VGA -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-27952-gigabyte-geforce-rtx-5060-windforce-max-oc-8g-0-1.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Card màn hình Gigabyte GeForce RTX 4060 WINDFORCE OC 8GB
+                        GDDR6
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >8.990.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >8.091.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                        >
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 184</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Gigabyte</span>
+                        <span class="home-product-item__origin-name"
+                          >Chính Hãng</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 2: CPU -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-25733-cpu-intel-core-i7-14700f-123.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        CPU Intel Core i7-14700F Box Chính Hãng (LGA1700 / 20
+                        Core 28 Thread / Turbo 5.4GHz)
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >10.490.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >9.441.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like">
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 320</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Intel</span>
+                        <span class="home-product-item__origin-name"
+                          >Chính Hãng</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 3: Bàn phím cơ -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-22464-mik--shiba.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Bàn phím cơ MIK Shiba TKL RGB Hotswap Gasket Mount Red
+                        Switch
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >1.250.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >1.125.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                        >
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 950</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">MIK</span>
+                        <span class="home-product-item__origin-name"
+                          >Chính Hãng</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 4: Chuột Gaming -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-17152-logitech-g102-gen2-white.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Chuột Gaming Logitech G102 Gen2 Lightsync RGB White
+                        (8000 DPI)
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >490.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >441.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like">
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 1.8k</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Logitech</span>
+                        <span class="home-product-item__origin-name"
+                          >Thụy Sĩ</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 5: RAM -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-29414-ram-kingston-fury-beast-16gb-16x1-ddr5-buss-5600-kf556c40bb-16wp.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        RAM Kingston Fury BEAST 16GB DDR5 Bus 5600MHz
+                        (KF556C40BB-16)
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >1.650.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >1.485.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                        >
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 560</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Kingston</span>
+                        <span class="home-product-item__origin-name">Mỹ</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 6: SSD -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-28092-ssd-lexar-nm610pro-500gb-nvme-m2-03.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Ổ cứng SSD Lexar NM610PRO 500GB M.2 NVMe PCIe Gen 3.0
+                        (Tốc độ 3300MB/s)
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >1.150.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >1.035.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like">
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 780</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Lexar</span>
+                        <span class="home-product-item__origin-name">Mỹ</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 7: Mainboard -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-16994-mainboard-asus-prime-a520m-k.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Bo mạch chủ Mainboard ASUS PRIME A520M-K DDR4 Socket AM4
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >1.690.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >1.521.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                        >
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 420</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">ASUS</span>
+                        <span class="home-product-item__origin-name"
+                          >Đài Loan</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 8: Nguồn PSU Chuẩn -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-25184-ngu---n-m--y-t--nh-corsair-rm850e-atx-3-0-1.jpeg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Nguồn máy tính Corsair RM850e ATX 3.0 (80 Plus Gold /
+                        Full Modular / PCIe 5.0)
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >3.290.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >2.961.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like">
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 340</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Corsair</span>
+                        <span class="home-product-item__origin-name">Mỹ</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 9: Tản nhiệt nước AIO -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-30169-t---n-nhi---t-n-----c-antec-omni-matrix-360-argb--360mm--argb--black-_7.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Tản nhiệt nước AIO Antec Omni Matrix 360 ARGB Black (Két
+                        360mm / 3 Quạt ARGB)
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >2.590.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >2.331.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                        >
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 188</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Antec</span>
+                        <span class="home-product-item__origin-name">Mỹ</span>
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Product 10: Tai nghe Gaming -->
+                  <div class="grid__column-2-4">
+                    <a class="home-product-item" href="#">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(&quot;https://nguyencongpc.vn/media/product/250-27035-tai-nghe-asus-rog-cetra-ii-core-1.jpg&quot;);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Tai nghe Gaming ASUS ROG Cetra II Core Âm Thanh Hi-Res
+                        Jack 3.5mm
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old"
+                          >1.290.000đ</span
+                        >
+                        <span class="home-product-item__price-current"
+                          >1.161.000đ</span
+                        >
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like">
+                          <i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i>
+                          <i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                          <i
+                            class="home-product-item__star--gold fa-solid fa-star"
+                          ></i>
+                        </div>
+                        <span class="home-product-item__sold">Đã bán 295</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">ASUS</span>
+                        <span class="home-product-item__origin-name"
+                          >Đài Loan</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Big Pagination -->
+              <ul class="pagination home-product__pagination">
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">
+                    <i
+                      class="pagination-item__icon fa-solid fa-chevron-left"
+                    ></i>
+                  </a>
+                </li>
+                <li class="pagination-item pagination-item--active">
+                  <a href="#" class="pagination-item__link">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">5</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">14</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-item__link">
+                    <i
+                      class="pagination-item__icon fa-solid fa-chevron-right"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
