@@ -1,0 +1,44 @@
+<!-- 1. Tại sao phải sử dụng React-DOM
+     2. Tại sao lại tách React-DOM ra
+     3. Render UI
+  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <script>
+      const postItem = React.createElement(
+        "div",
+        { className: "post-item" },
+        React.createElement("h2", { title: "My Title" }, "Hello Bear"),
+        React.createElement("p", null, "This is a paragraph."),
+      );
+      const root = document.getElementById("root");
+      ReactDOM.render(postItem, document.getElementById("root"));
+    </script> -->
+
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      const postItem = React.createElement(
+        "div",
+        { className: "post-item" },
+        React.createElement("h2", { title: "My Title" }, "Hello Bear"),
+        React.createElement("p", null, "This is a paragraph."),
+      );
+      root.render(postItem);
+    </script>
+  </body>
+</html>

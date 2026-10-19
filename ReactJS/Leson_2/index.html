@@ -1,0 +1,75 @@
+<!-- 1. React.createElement() -> React elements
+     2. So sánh với document.createElement() -> DOM elements
+     3. Thay đổi: id, className, style,...
+     4. Thêm: text, HTML
+     5. Tạo: 
+            <h1 title = "My Title"  class = "my-class">Hello Bear</h1>
+     6. Tạo
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+            </ul>
+     7. Tạo
+            <div class = "post-item">
+              <h2 title = "My Title">Hello Bear</h2>
+              <p>This is a paragraph.</p>
+            </div> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- DOM -->
+    <script>
+      const h1DOM = document.createElement("h1");
+      h1DOM.title = "My Title";
+      h1DOM.className = "my-class";
+      h1DOM.innerText = "Hello Bear";
+
+      document.body.appendChild(h1DOM);
+
+      // React
+      const h1React = React.createElement(
+        "h1",
+        {
+          title: "My Title",
+          className: "my-class",
+        },
+        "Hello Bear",
+      );
+
+      ReactDOM.render(h1React, document.getElementById("root"));
+
+      // DOM
+      const postItemDOM = document.createElement("div");
+      postItemDOM.className = "post-item";
+
+      const h2DOM = document.createElement("h2");
+      h2DOM.title = "My Title";
+      h2DOM.innerText = "Hello Bear";
+
+      const pDOM = document.createElement("p");
+      pDOM.innerText = "This is a paragraph.";
+
+      postItemDOM.appendChild(h2DOM);
+      postItemDOM.appendChild(pDOM);
+
+      document.body.appendChild(postItemDOM);
+
+      //   React
+      const postItemReact = React.createElement(
+        "div",
+        { className: "post-item" },
+        React.createElement("h2", { title: "My Title" }, "Hello Bear"),
+        React.createElement("p", null, "This is a paragraph."),
+      );
+
+      ReactDOM.render(postItemReact, document.getElementById("root"));
+    </script>
+  </body>
+</html>

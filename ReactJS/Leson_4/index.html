@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="main.js"></script>
+    <!-- chỉ để text/base thì mới hiện trangw  -->
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      const ul = (
+        <ul>
+          <li>JSX là gì?</li>
+          <li>JSX không phải là HTML, nó là JavaScript XML</li>
+          <li>Cần có Javascript, Babel để dùng JSX</li>
+          <li>JSX và React-DOM?</li>
+        </ul>
+      );
+      root.render(ul);
+    </script>
+  </body>
+</html>
