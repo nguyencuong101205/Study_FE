@@ -1,0 +1,6 @@
+$kind: http-request
+name: http://localhost:3000/posts
+description: ""
+url: http://localhost:3000/posts
+method: GET
+order: 1000
