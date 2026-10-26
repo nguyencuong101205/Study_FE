@@ -52,3 +52,32 @@
 | Tối ưu một phép tính toán tốn nhiều CPU               | `useMemo`                            | Không dùng cho phép tính đơn giản vì chi phí cache còn tốn hơn. |
 | Tối ưu hàm truyền xuống component con (`React.memo`)  | `useCallback`                        | Vô dụng nếu component con không được bọc `React.memo`.          |
 | Gõ phím hoặc chuyển tab bị đơ do render dữ liệu lớn   | `useTransition` / `useDeferredValue` | Giúp giao diện luôn phản hồi ngay tức thì.                      |
+
+# mindmap
+
+- root((React Hooks))
+  - Quản lý State
+    - useState
+    - useReducer
+    - useActionState (React 19)
+    - useOptimistic (React 19)
+  - Context & Đọc dữ liệu
+    - useContext
+    - use (React 19)
+  - DOM & Tham chiếu
+    - useRef
+    - useImperativeHandle
+  - Tác vụ phụ Side Effects
+    - useEffect
+    - useLayoutEffect
+    - useInsertionEffect
+  - Tối ưu hiệu năng
+    - useMemo
+    - useCallback
+  - Xử lý đồng thời Concurrent
+    - useTransition
+    - useDeferredValue
+  - Nâng cao & Tiện ích
+    - useId
+    - useSyncExternalStore
+    - useDebugValue
